@@ -1,0 +1,17 @@
+# Entorno virtual
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Los KID y los resultados son del usuario: no se suben al repositorio
+kids/*
+!kids/.gitkeep
+resultados/*
+!resultados/.gitkeep
+
+# Sistema
+.DS_Store
