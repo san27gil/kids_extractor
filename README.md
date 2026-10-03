@@ -17,22 +17,20 @@ siempre sale en español.
 
 El resultado se muestra como tabla en la terminal y se guarda en una **base de
 datos SQLite** personal (`resultados/kids.db`) que se va acumulando entre
-ejecuciones: guarda cada versión de cada KID con su fecha, así que sabes si el
-que tienes es el último.
+ejecuciones: guarda cada versión de cada KID con su fecha, para poder identificar si tienes es el último.
 
 ---
 
 ## Privacidad y uso legal
 
-- **No descarga nada de internet.** El usuario aporta los KID que ya tiene
-  (los que cada gestora publica en su web o entrega al cliente).
+- **No descarga nada de internet.** El usuario aporta los KID que ya tiene.
 - **Nada sale del ordenador.** Los PDF se leen en local y la IA
   ([Ollama](https://ollama.com)) también se ejecuta en local: no hay APIs
   externas ni se envían documentos a terceros.
 - **Los PDF solo se leen**: no se mueven, modifican ni borran.
 - El repositorio no incluye ningún KID.
 
-> Herramienta de apoyo para leer documentos. No es asesoramiento financiero:
+> Herramienta de apoyo para leer documentos. No es asesoramiento financiero.
 > comprueba siempre los datos en el KID original.
 
 ---
@@ -79,16 +77,16 @@ Requisitos: Python 3.9 o superior y, para la IA, la app
 [Ollama](https://ollama.com).
 
 ```bash
-git clone https://github.com/san27gil/kid_extractor.git
+git clone https://github.com/san27gil/kids_extractor.git
 cd kid_extractor
 python3 -m venv .venv
 .venv/bin/pip install -r requirements.txt
 
-ollama pull gemma4:12b      # opcional, para nombre y descripción resumida
+ollama pull gemma4:12b      # opcional, se usa para nombre y descripción resumida
 ```
 
-`gemma4:12b` funciona en un Mac M4 con 16 GB y tarda unos 15-20 s por KID. Se
-puede usar cualquier otro modelo de Ollama con `--modelo`.
+`gemma4:12b` testeado en un Mac M4 con 16 GB y tarda unos 15 ssegundos por KID. Se
+puede cambiar el modelo de Ollama con `--modelo`.
 
 ## Uso
 
