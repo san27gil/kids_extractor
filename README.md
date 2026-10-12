@@ -1,5 +1,7 @@
 # KID Extractor
 
+![KID Extractor leyendo tres KID](docs/demo.gif)
+
 Programa de terminal que lee los **KID** (Documento de Datos Fundamentales) de fondos de inversión en PDF y saca, para cada uno, lo más importante:
 
 | Dato | Cómo se obtiene |
