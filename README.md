@@ -1,6 +1,15 @@
 # KID Extractor
 
-![KID Extractor leyendo tres KID](docs/demo.gif)
+## 1. Extraer tres archivos PDF diferentes
+<img src="docs/demo.gif" alt="KID Extractor leyendo tres KID" width="700">
+
+## 2. Si hay varios del mismo fondo solo se guarda el más actualizado
+
+<img src="docs/demo2.gif" alt="KID Extractor leyendo dos KID de fechas diferentes" width="700">
+
+## 3. Consultamos la tabla y ordenamos por ter
+
+<img src="docs/demo3.gif" alt="KID Extractor leyendo dos KID de fechas diferentes" width="700">
 
 Programa de terminal que lee los **KID** (Documento de Datos Fundamentales) de fondos de inversión en PDF y saca, para cada uno, lo más importante:
 

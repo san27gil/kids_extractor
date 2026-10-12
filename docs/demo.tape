@@ -1,5 +1,5 @@
 # Dónde se guarda el GIF
-Output docs/demo.gif
+Output docs/demo3.gif
 
 # Aspecto: ajusta Width si la tabla se corta
 Set Shell "zsh"
@@ -17,7 +17,10 @@ Enter
 Show
 
 # Lo que se ve
-Type ".venv/bin/python extraer.py --salida /tmp/kids_demo"
+Type "sqlite3 -box resultados/kids.db"
+Sleep 600ms
+Enter
+Type "SELECT * FROM ultimos ORDER BY ter;"
 Sleep 600ms
 Enter
 Wait
